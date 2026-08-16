@@ -1,0 +1,38 @@
+Problem:
+The project examines how coaching participation, Class XII academic performance, and reported coaching duration relate to entrance-examination performance. The
+supplied dataset contains 666 observations and 11 features plus the categorical target. It has no missing values. There are 44 exact duplicate feature rows; these were
+retained because no student ID is provided, so identical attributes cannot prove that records represent the same candidate.
+
+📌 Overview
+Students :   666
+Excellent:   15.2%
+Good     :   31.5%
+Vg       :   29.7%
+Average  :   23.6%
+
+Research Questions
+# Question
+1 Is participation in coaching associated with entrance-examination performance?
+2 How is Class XII academic performance associated with entrance-examination performance?
+3 Does reported coaching duration show different performance patterns?
+
+Three Key Findings
+1. Coaching: Coaching participation is associated with performance (χ²=29.09, df=6, p=5.85e-05; Cramer's V=0.148). The OA group has the highest observed Excellent
+share (35.8%), while WA has the highest Vg share (32.5%). The effect is small and the analysis is observational, so this does not establish that coaching causes the
+difference.
+2. Class XII preparation: This is the strongest observed relationship (χ²=72.32, df=9, p=5.32e-12; Cramer's V=0.190). Because the Class XII Average category has only
+12 students, a robustness check combining Average with Good still gives p=1.53e-13 and V=0.233, supporting the same conclusion.
+3. Coaching duration: Duration is highly imbalanced: TWO=368, ONE=199, THREE=86, FOUR=11, FIVE=1, SEVEN=1. Sparse expected counts make the ordinary
+chi-square approximation unreliable. A 20,000-repetition permutation test gives p≈0.218; therefore there is insufficient evidence of an association.
+
+Recommended Action
+Use prior academic performance to identify students who may benefit from targeted support. Treat coaching as one contextual factor rather than assuming it causes better
+outcomes. To evaluate coaching effectiveness causally, collect longitudinal data or use a study design that better controls for prior achievement and access-related
+confounding.
+
+Limitations & Bias
+The data are observational, so causal claims are not justified. Coaching choice may be confounded by prior academic achievement, family background, resources, or other unmeasured factors.
+The supplied duration labels are categorical and their exact units are not documented, so they are treated only as reported categories. The dataset concerns candidates who qualified for a
+medical entrance examination in Assam and may not generalize to all students.
+Source & Assessment Alignment
+Source: UCI Machine Learning Repository, Student Performance on an Entrance Examination (2018). The assessment asks for three questions, reproducible clea
