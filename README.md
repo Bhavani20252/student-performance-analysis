@@ -1,4 +1,7 @@
 # Student Entrance Examination Performance Analysis
+## 🌐 Live Dashboard
+
+[Open the Student Performance Analysis Dashboard](https://student-performance-analysis-hdjuft5wq7bvwa2cftuqfp.streamlit.app/)
 
 ## 📌 Project Overview
 
