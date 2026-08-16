@@ -1,11 +1,9 @@
 # Student Entrance Examination Performance Analysis
-
 ## 🌐 Live Dashboard
 
 [Open the Student Performance Analysis Dashboard](https://student-performance-analysis-hdjuft5wq7bvwa2cftuqfp.streamlit.app/)
 
-
-## 📌 Project Overview
+## Project Overview
 
 This project analyzes student performance in an entrance examination using data related to students' academic background, coaching participation, coaching duration, education medium, and family background.
 
@@ -136,6 +134,4 @@ This decision prevents potentially valid observations from being incorrectly del
 The cleaned dataset is stored in:
 
 ```text
-data/processed/cleaned_student_data.csv
-
-
+Performance
