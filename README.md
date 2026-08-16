@@ -32,26 +32,6 @@ The project uses the **Student Performance on an Entrance Examination** dataset.
 
 The dataset contains information about students who qualified for admission to medical colleges in Assam.
 
-Important variables include:
-
-- `Performance`
-- `Gender`
-- `Caste`
-- `coaching`
-- `time`
-- `Class_ten_education`
-- `twelve_education`
-- `medium`
-- `Class_X_Percentage`
-- `Class_XII_Percentage`
-- `Father_occupation`
-- `Mother_occupation`
-
-The target variable is:
-
-```text
-Performance
-
 ## Decisions Made
 
 ### 1. Duplicate Handling
@@ -81,3 +61,29 @@ small, a permutation-based test was used for the duration analysis.
 The dataset is observational. Therefore, statistically significant associations
 are not interpreted as proof that coaching or another variable causes improved
 performance.
+
+Important variables include:
+
+- `Performance`
+- `Gender`
+- `Caste`
+- `coaching`
+- `time`
+- `Class_ten_education`
+- `twelve_education`
+- `medium`
+- `Class_X_Percentage`
+- `Class_XII_Percentage`
+- `Father_occupation`
+- `Mother_occupation`
+
+The target variable is:
+
+```text
+Performance
+
+
+
+
+
+
