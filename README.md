@@ -51,3 +51,33 @@ The target variable is:
 
 ```text
 Performance
+
+## Decisions Made
+
+### 1. Duplicate Handling
+
+The dataset contains exact duplicate feature rows. These were retained because
+there is no student identifier, so identical feature values do not prove that
+two records represent the same student.
+
+### 2. Missing Values
+
+The dataset was checked for missing values. No missing values were found.
+
+### 3. Statistical Test
+
+Chi-square tests of independence were used for categorical variables.
+
+Cramer's V was used to describe the strength of association.
+
+### 4. Sparse Categories
+
+The coaching-duration variable contains very small categories. Because the
+chi-square approximation becomes unreliable when expected frequencies are
+small, a permutation-based test was used for the duration analysis.
+
+### 5. Causal Interpretation
+
+The dataset is observational. Therefore, statistically significant associations
+are not interpreted as proof that coaching or another variable causes improved
+performance.
